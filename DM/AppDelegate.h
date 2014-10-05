@@ -8,8 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSTextFieldDelegate>{
+    
+    __weak IBOutlet NSTextField *txtDice;
+    __weak IBOutlet NSTextField *txtMod;
+    __weak IBOutlet NSTextField *txtResult;
+}
 
+- (IBAction)rollDice:(id)sender;
+- (IBAction)addMod:(id)sender;
 
 @end
 
