@@ -18,6 +18,7 @@
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)rollDice:(id)sender;
 - (IBAction)addMod:(id)sender;

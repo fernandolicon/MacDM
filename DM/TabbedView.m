@@ -53,12 +53,6 @@
     }
 }
 
-- (IBAction)addNPC:(id)sender {
-}
-
-- (IBAction)removeNPC:(id)sender {
-}
-
 - (void)addModifier{
     if ([txtDice intValue] || [txtMod intValue]) {
         int result = [txtDice intValue] + [txtMod intValue];
@@ -70,5 +64,10 @@
 
 #pragma mark - NPCs
 
+- (IBAction)addNPC:(id)sender {
+}
+
+- (IBAction)removeNPC:(id)sender {
+}
 
 @end
