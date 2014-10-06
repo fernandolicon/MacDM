@@ -8,15 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate, NSTextFieldDelegate>{
-    
-    __weak IBOutlet NSTextField *txtDice;
-    __weak IBOutlet NSTextField *txtMod;
-    __weak IBOutlet NSTextField *txtResult;
+@interface AppDelegate : NSObject {
+    NSArray *NPC;
 }
 
-- (IBAction)rollDice:(id)sender;
-- (IBAction)addMod:(id)sender;
+@property (assign) IBOutlet NSWindow *window;
+
+// Added for Core Data
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end
 
