@@ -11,11 +11,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
-            <connections>
-                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
-            </connections>
-        </customObject>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
@@ -666,40 +662,5 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="DM" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="203" y="400" width="555" height="415"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
-            <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="555" height="415"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </view>
-            <toolbar key="toolbar" implicitIdentifier="9E541FD4-1303-4EC1-A7C1-9F270E0F1ECC" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="small" id="hBs-hm-kER">
-                <allowedToolbarItems>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="AjR-Cd-RPv"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="1DZ-lT-Zav"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="juT-Mj-SsZ"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="6CG-45-ek3"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="HSZ-0y-WbY"/>
-                    <toolbarItem implicitItemIdentifier="A718526D-AE00-467A-89D1-4C8462947EAF" label="Dados" paletteLabel="Dados" tag="5" image="Dice" id="NW2-Vt-rfl"/>
-                    <toolbarItem implicitItemIdentifier="3F6AE22D-A440-4A97-8C7C-EB53E6B272D6" label="NPC" paletteLabel="NPC" tag="6" image="Npc" id="slp-CS-Y9C"/>
-                </allowedToolbarItems>
-                <defaultToolbarItems>
-                    <toolbarItem reference="HSZ-0y-WbY"/>
-                    <toolbarItem reference="slp-CS-Y9C"/>
-                    <toolbarItem reference="NW2-Vt-rfl"/>
-                    <toolbarItem reference="HSZ-0y-WbY"/>
-                </defaultToolbarItems>
-                <connections>
-                    <outlet property="delegate" destination="Voe-Tx-rLC" id="UtX-J8-q46"/>
-                </connections>
-            </toolbar>
-            <point key="canvasLocation" x="302.5" y="542.5"/>
-        </window>
     </objects>
-    <resources>
-        <image name="Dice" width="64.080001831054688" height="62.400001525878906"/>
-        <image name="Npc" width="64.080001831054688" height="64.319999694824219"/>
-    </resources>
 </document>

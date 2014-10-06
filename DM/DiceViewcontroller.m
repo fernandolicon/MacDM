@@ -1,22 +1,32 @@
 //
-//  TabbedView.m
+//  DiceViewcontroller.m
 //  DM
 //
-//  Created by Luis Fernando Mata Licón on 05/10/14.
+//  Created by Luis Fernando Mata Licón on 06/10/14.
 //  Copyright (c) 2014 Luis Fernando Mata. All rights reserved.
 //
 
-#import "TabbedView.h"
+#import "DiceViewcontroller.h"
 
-@interface TabbedView ()
+@interface DiceViewcontroller ()
 
 @end
 
-@implementation TabbedView
+@implementation DiceViewcontroller
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if (self){
+        
+    }
+    
+    return self;
+}
+
+- (id)init
+{
+    self = [super initWithNibName:@"DiceViewcontroller" bundle:nil];
     if (self) {
         // Initialization code here.
     }
@@ -62,12 +72,5 @@
     }
 }
 
-#pragma mark - NPCs
-
-- (IBAction)addNPC:(id)sender {
-}
-
-- (IBAction)removeNPC:(id)sender {
-}
 
 @end

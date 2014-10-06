@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6245"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainView">
+            <connections>
+                <outlet property="window" destination="U8B-9q-RlT" id="6FK-Tg-rhg"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="DM" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="U8B-9q-RlT">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="203" y="400" width="555" height="415"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" id="VRe-93-dDp">
+                <rect key="frame" x="0.0" y="0.0" width="555" height="415"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="9E541FD4-1303-4EC1-A7C1-9F270E0F1ECC" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="small" id="IdT-jX-5fe">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="q5h-Q2-9fA"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Un1-O2-ZwR"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="jcr-BO-Ytz"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="km2-M8-U1b"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="s6r-VK-4vH"/>
+                    <toolbarItem implicitItemIdentifier="A718526D-AE00-467A-89D1-4C8462947EAF" label="Dados" paletteLabel="Dados" image="Dice" selectable="YES" id="Svn-4j-Rf8">
+                        <connections>
+                            <action selector="presentNewView:" target="-2" id="5Ar-rz-m8s"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="3F6AE22D-A440-4A97-8C7C-EB53E6B272D6" label="NPC" paletteLabel="NPC" tag="1" image="Npc" selectable="YES" id="Jfc-8Q-ky2">
+                        <connections>
+                            <action selector="presentNewView:" target="-2" id="RDK-qc-Ax4"/>
+                        </connections>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="s6r-VK-4vH"/>
+                    <toolbarItem reference="Jfc-8Q-ky2"/>
+                    <toolbarItem reference="Svn-4j-Rf8"/>
+                    <toolbarItem reference="s6r-VK-4vH"/>
+                </defaultToolbarItems>
+                <connections>
+                    <outlet property="delegate" destination="-2" id="KXv-10-ISc"/>
+                </connections>
+            </toolbar>
+            <point key="canvasLocation" x="289.5" y="436.5"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Dice" width="64.080001831054688" height="62.400001525878906"/>
+        <image name="Npc" width="64.080001831054688" height="64.319999694824219"/>
+    </resources>
+</document>

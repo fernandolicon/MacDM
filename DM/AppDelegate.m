@@ -7,11 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "TabbedView.h"
+#import "MainView.h"
 
 @interface AppDelegate ()
 
-@property (nonatomic,strong) IBOutlet TabbedView *tabbedViewController;
+@property (nonatomic,strong) IBOutlet MainView *mainViewController;
 @end
 
 @implementation AppDelegate
@@ -23,13 +23,12 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // 1. Create the master View Controller
-    self.tabbedViewController = [[TabbedView alloc] initWithNibName:@"TabbedView" bundle:nil];
+    self.mainViewController = [[MainView alloc] init];
     
     // 2. Add the view controller to the Window's content view
-    [self.window.contentView addSubview:self.tabbedViewController.view];
-    self.tabbedViewController.view.frame = ((NSView*)self.window.contentView).bounds;
+    [self.mainViewController showWindow:nil];
     
-    self.tabbedViewController.managedObjectContext = self.managedObjectContext;
+    self.mainViewController.managedObjectContext = self.managedObjectContext;
 }
 
 
@@ -180,13 +179,8 @@
 }
 
 #pragma mark - Toolbar
-
-- (NSArray *)toolbarAllowedItemIdentifiers:(NSToolbar *)toolbar{
-    return [NSArray arrayWithObjects:NSToolbarSeparatorItemIdentifier,
-            NSToolbarSpaceItemIdentifier,
-            NSToolbarFlexibleSpaceItemIdentifier,
-            NSToolbarCustomizeToolbarItemIdentifier,
-            @"Dados", @"NPC", nil];
+- (BOOL)validateToolbarItem:(NSToolbarItem *)theItem{
+    return YES;
 }
 
 @end
