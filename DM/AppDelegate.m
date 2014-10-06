@@ -179,4 +179,14 @@
     return NSTerminateNow;
 }
 
+#pragma mark - Toolbar
+
+- (NSArray *)toolbarAllowedItemIdentifiers:(NSToolbar *)toolbar{
+    return [NSArray arrayWithObjects:NSToolbarSeparatorItemIdentifier,
+            NSToolbarSpaceItemIdentifier,
+            NSToolbarFlexibleSpaceItemIdentifier,
+            NSToolbarCustomizeToolbarItemIdentifier,
+            @"Dados", @"NPC", nil];
+}
+
 @end

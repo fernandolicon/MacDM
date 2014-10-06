@@ -18,6 +18,8 @@
 		A80028CA19E04AB600CD1126 /* D&D 64.png in Resources */ = {isa = PBXBuildFile; fileRef = A80028C919E04AB600CD1126 /* D&D 64.png */; };
 		A80028CC19E04AFE00CD1126 /* D&D 32.png in Resources */ = {isa = PBXBuildFile; fileRef = A80028CB19E04AFE00CD1126 /* D&D 32.png */; };
 		A80028CF19E04B4300CD1126 /* D&D 16.png in Resources */ = {isa = PBXBuildFile; fileRef = A80028CE19E04B4300CD1126 /* D&D 16.png */; };
+		A85298EB19E30AE4006FC577 /* Dice.png in Resources */ = {isa = PBXBuildFile; fileRef = A85298EA19E30AE4006FC577 /* Dice.png */; };
+		A85298ED19E30BC6006FC577 /* Npc.png in Resources */ = {isa = PBXBuildFile; fileRef = A85298EC19E30BC6006FC577 /* Npc.png */; };
 		A8DC8ABC19E0BB2100950998 /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A8DC8ABB19E0BB2100950998 /* Bg.png */; };
 		A8E2D71219E22E36005851D0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2D71119E22E36005851D0 /* CoreData.framework */; };
 		A8E2D71619E22F88005851D0 /* TabbedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E2D71419E22F88005851D0 /* TabbedView.m */; };
@@ -53,6 +55,8 @@
 		A80028C919E04AB600CD1126 /* D&D 64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "D&D 64.png"; sourceTree = "<group>"; };
 		A80028CB19E04AFE00CD1126 /* D&D 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "D&D 32.png"; sourceTree = "<group>"; };
 		A80028CE19E04B4300CD1126 /* D&D 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "D&D 16.png"; sourceTree = "<group>"; };
+		A85298EA19E30AE4006FC577 /* Dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dice.png; path = Icons/Dice.png; sourceTree = "<group>"; };
+		A85298EC19E30BC6006FC577 /* Npc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Npc.png; path = Icons/Npc.png; sourceTree = "<group>"; };
 		A8DC8ABB19E0BB2100950998 /* Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg.png; sourceTree = "<group>"; };
 		A8E2D71119E22E36005851D0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A8E2D71319E22F88005851D0 /* TabbedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbedView.h; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		A800289B19DFEA7500CD1126 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A85298EC19E30BC6006FC577 /* Npc.png */,
+				A85298EA19E30AE4006FC577 /* Dice.png */,
 				A8DC8ABB19E0BB2100950998 /* Bg.png */,
 				A80028C319E049DA00CD1126 /* D&D 512.png */,
 				A80028C519E04A4600CD1126 /* D&D 256.png */,
@@ -243,6 +249,7 @@
 				A8E2D71719E22F88005851D0 /* TabbedView.xib in Resources */,
 				A8DC8ABC19E0BB2100950998 /* Bg.png in Resources */,
 				A80028C819E04A9700CD1126 /* D&D 128.png in Resources */,
+				A85298ED19E30BC6006FC577 /* Npc.png in Resources */,
 				A80028CA19E04AB600CD1126 /* D&D 64.png in Resources */,
 				A80028CF19E04B4300CD1126 /* D&D 16.png in Resources */,
 				A80028CC19E04AFE00CD1126 /* D&D 32.png in Resources */,
@@ -250,6 +257,7 @@
 				A80028C619E04A4600CD1126 /* D&D 256.png in Resources */,
 				A80028A619DFEA7500CD1126 /* MainMenu.xib in Resources */,
 				A80028C419E049DA00CD1126 /* D&D 512.png in Resources */,
+				A85298EB19E30AE4006FC577 /* Dice.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
