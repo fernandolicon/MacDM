@@ -14,7 +14,6 @@
     NSInteger currentViewTag;
 }
 
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) NPCViewController *npcView;
 @property (strong, nonatomic) DiceViewcontroller *diceView;
 

@@ -38,7 +38,26 @@
     currentViewTag = 1;
     
     npcView = [[NPCViewController alloc] init];
+    [self.window setContentSize:npcView.view.frame.size];
     self.window.contentView = npcView.view;
+    
+    [[[self window] contentView] setWantsLayer:YES];
+}
+
+#pragma mark - Set new frames
+
+- (NSRect) newFrameForNewContentView: (NSView *) view{
+    NSWindow *window = self.window;
+    NSRect newFrameRect = [window frameRectForContentRect:view.frame];
+    NSRect oldFrameRect = window.frame;
+    NSSize newSize = newFrameRect.size;
+    NSSize oldSize = oldFrameRect.size;
+    
+    NSRect frame = [window frame];
+    frame.size = newSize;
+    frame.origin.y -= (newSize.height - oldSize.height);
+    
+    return frame;
 }
 
 - (NSView *) getNewViewforTag: (NSInteger) tag{
@@ -79,9 +98,23 @@
 - (void)presentNewView:(id)sender{
     NSInteger tag = [sender tag];
     NSView *view = [self getNewViewforTag:tag];
+    NSView *previousView = [self getNewViewforTag:currentViewTag];
     currentViewTag = tag;
     
-    self.window.contentView = view;
+    NSRect newFrame = [self newFrameForNewContentView:view];
+    
+    [NSAnimationContext beginGrouping];
+    
+    if ([[NSApp currentEvent] modifierFlags] & NSShiftKeyMask) {
+        [[NSAnimationContext currentContext] setDuration:1.0];
+    }
+    
+        [[self.window.contentView animator] replaceSubview:previousView with:view];
+        [[self.window animator] setFrame:newFrame display:YES];
+        self.window.contentView = view;
+    
+        [NSAnimationContext endGrouping];
+    
 }
 
 @end

@@ -10,7 +10,12 @@
 
 @interface NPCViewController : NSViewController
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong) IBOutlet NSWindow *windowInfo;
+
 - (IBAction)addNPC:(id)sender;
 - (IBAction)removeNPC:(id)sender;
+
+- (IBAction)closeWindow:(id)sender;
 
 @end

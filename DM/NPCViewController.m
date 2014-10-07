@@ -14,6 +14,8 @@
 
 @implementation NPCViewController
 
+@synthesize windowInfo;
+
 - (id)init
 {
     self = [super initWithNibName:@"NPCViewController" bundle:nil];
@@ -27,9 +29,14 @@
 #pragma mark - NPCs
 
 - (IBAction)addNPC:(id)sender {
+    [windowInfo makeKeyAndOrderFront:windowInfo];
 }
 
 - (IBAction)removeNPC:(id)sender {
+}
+
+- (IBAction)closeWindow:(id)sender {
+    [windowInfo close];
 }
 
 @end

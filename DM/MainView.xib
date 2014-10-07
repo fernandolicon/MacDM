@@ -27,15 +27,38 @@
                     <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="jcr-BO-Ytz"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="km2-M8-U1b"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="s6r-VK-4vH"/>
-                    <toolbarItem implicitItemIdentifier="A718526D-AE00-467A-89D1-4C8462947EAF" label="Dados" paletteLabel="Dados" image="Dice" selectable="YES" id="Svn-4j-Rf8">
+                    <toolbarItem implicitItemIdentifier="A718526D-AE00-467A-89D1-4C8462947EAF" label="Dados" paletteLabel="Dados" image="Dice" id="Svn-4j-Rf8">
                         <connections>
                             <action selector="presentNewView:" target="-2" id="5Ar-rz-m8s"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="3F6AE22D-A440-4A97-8C7C-EB53E6B272D6" label="NPC" paletteLabel="NPC" tag="1" image="Npc" selectable="YES" id="Jfc-8Q-ky2">
+                    <toolbarItem implicitItemIdentifier="3F6AE22D-A440-4A97-8C7C-EB53E6B272D6" label="NPC" paletteLabel="NPC" tag="1" image="Npc" id="Jfc-8Q-ky2">
                         <connections>
                             <action selector="presentNewView:" target="-2" id="RDK-qc-Ax4"/>
                         </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="D0659969-A1B4-4E0E-B8CC-891016DC7122" label="Custom View" paletteLabel="Custom View" id="8m6-i6-NBp">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="67" height="28"/>
+                        <size key="maxSize" width="100" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="1xk-vI-oVu">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="selectOne" id="5bI-ZD-8JG">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment width="32">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment width="32" selected="YES" tag="1">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment width="32">
+                                        <nil key="label"/>
+                                    </segment>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
                     </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>

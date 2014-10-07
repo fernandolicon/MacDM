@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainView.h"
+#import "NPCViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +29,7 @@
     // 2. Add the view controller to the Window's content view
     [self.mainViewController showWindow:nil];
     
-    self.mainViewController.managedObjectContext = self.managedObjectContext;
+    self.mainViewController.npcView.managedObjectContext = self.managedObjectContext;
 }
 
 
