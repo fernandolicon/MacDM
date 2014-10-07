@@ -31,16 +31,34 @@
 #pragma mark - NPCs
 
 - (IBAction)addNPC:(id)sender {
-    NPC *newNPC = [NSEntityDescription
-                                    insertNewObjectForEntityForName:@"NPC"
-                                    inManagedObjectContext:managedObjectContext];
-    newNPC.name = nameTxt.stringValue;
-    newNPC.race = raceTxt.stringValue;
-    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-    [f setNumberStyle:NSNumberFormatterDecimalStyle];
-    newNPC.age = [f numberFromString:ageTxt.stringValue];
-    newNPC.comments = [[commentsTxt textStorage] string];
+    NSString *name = nameTxt.stringValue;
+    NSString *race = raceTxt.stringValue;
+    NSString *job = jobTxt.stringValue;
+    int age = (int) ageTxt.stringValue;
     
+    if ((age <= 0) || ([ageTxt.stringValue isEqualToString:@""])  || ([name isEqualToString:@""]) || ([race isEqualToString:@""]) || ([job isEqualToString:@""])) {
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert addButtonWithTitle:@"Ok"];
+        [alert setMessageText:@"Datos incorrectos"];
+        [alert setInformativeText:@"Por favor llene todos los datos obligatorios."];
+        [alert setAlertStyle:NSCriticalAlertStyle];
+        [alert beginSheetModalForWindow: windowInfo modalDelegate:self didEndSelector:nil contextInfo:nil];
+    }else{
+        NPC *newNPC = [NSEntityDescription insertNewObjectForEntityForName:@"NPC" inManagedObjectContext:managedObjectContext];
+        newNPC.name = name;
+        newNPC.race = race;
+        NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+        [f setNumberStyle:NSNumberFormatterDecimalStyle];
+        newNPC.age = [f numberFromString:ageTxt.stringValue];
+        newNPC.comments = job;
+    
+        nameTxt.stringValue = @"";
+        raceTxt.stringValue = @"";
+        ageTxt.stringValue = @"";
+        jobTxt.stringValue = @"";
+        [commentsTxt setString:@""];
+        [windowInfo makeFirstResponder:nameTxt];
+    }
 }
 
 - (IBAction)openForm:(id)sender {
@@ -50,5 +68,7 @@
 - (IBAction)closeWindow:(id)sender {
     [windowInfo close];
 }
+
+
 
 @end
