@@ -8,13 +8,21 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface NPCViewController : NSViewController
+@interface NPCViewController : NSViewController{
+    
+    __weak IBOutlet NSTextField *nameTxt;
+    __weak IBOutlet NSTextField *raceTxt;
+    __weak IBOutlet NSTextField *ageTxt;
+    __weak IBOutlet NSTextField *jobTxt;
+    __unsafe_unretained IBOutlet NSTextView *commentsTxt;
+}
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong) IBOutlet NSWindow *windowInfo;
+@property (strong) IBOutlet NSArrayController *npcArrayController;
 
 - (IBAction)addNPC:(id)sender;
-- (IBAction)removeNPC:(id)sender;
+- (IBAction)openForm:(id)sender;
 
 - (IBAction)closeWindow:(id)sender;
 

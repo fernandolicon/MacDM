@@ -7,6 +7,7 @@
 //
 
 #import "NPCViewController.h"
+#import "NPC.h"
 
 @interface NPCViewController ()
 
@@ -15,6 +16,7 @@
 @implementation NPCViewController
 
 @synthesize windowInfo;
+@synthesize managedObjectContext;
 
 - (id)init
 {
@@ -29,10 +31,20 @@
 #pragma mark - NPCs
 
 - (IBAction)addNPC:(id)sender {
-    [windowInfo makeKeyAndOrderFront:windowInfo];
+    NPC *newNPC = [NSEntityDescription
+                                    insertNewObjectForEntityForName:@"NPC"
+                                    inManagedObjectContext:managedObjectContext];
+    newNPC.name = nameTxt.stringValue;
+    newNPC.race = raceTxt.stringValue;
+    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+    [f setNumberStyle:NSNumberFormatterDecimalStyle];
+    newNPC.age = [f numberFromString:ageTxt.stringValue];
+    newNPC.comments = [[commentsTxt textStorage] string];
+    
 }
 
-- (IBAction)removeNPC:(id)sender {
+- (IBAction)openForm:(id)sender {
+    [windowInfo makeKeyAndOrderFront:windowInfo];
 }
 
 - (IBAction)closeWindow:(id)sender {

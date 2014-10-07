@@ -6,6 +6,12 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NPCViewController">
             <connections>
+                <outlet property="ageTxt" destination="1wz-iA-u7z" id="Fk7-LC-UO1"/>
+                <outlet property="commentsTxt" destination="a5u-Ix-dOa" id="3bE-mz-PJp"/>
+                <outlet property="jobTxt" destination="SyN-Ft-MaO" id="8hv-mY-uPj"/>
+                <outlet property="nameTxt" destination="oZe-FR-WUd" id="6mT-aS-Zic"/>
+                <outlet property="npcArrayController" destination="Xcc-gr-gVq" id="Oba-Ns-Wsj"/>
+                <outlet property="raceTxt" destination="gqg-bz-PLq" id="iNy-k4-hMb"/>
                 <outlet property="view" destination="H0M-9U-5Lu" id="P7d-Xg-vUk"/>
                 <outlet property="windowInfo" destination="xho-Rq-SJ2" id="n2G-Qw-HA3"/>
             </connections>
@@ -26,7 +32,7 @@
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
-                        <action selector="addNPC:" target="-2" id="iky-cP-ZRL"/>
+                        <action selector="openForm:" target="-2" id="Rd0-8c-MAb"/>
                     </connections>
                 </button>
                 <button translatesAutoresizingMaskIntoConstraints="NO" id="e3D-57-nEg">
@@ -50,7 +56,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowHeight="32" id="eqg-tc-L8k">
-                                <rect key="frame" x="0.0" y="0.0" width="484" height="34"/>
+                                <rect key="frame" x="0.0" y="0.0" width="149" height="34"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -102,7 +108,11 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                     <connections>
-                        <binding destination="Xcc-gr-gVq" name="hidden" keyPath="selection.@count" id="YnB-dI-Yqi"/>
+                        <binding destination="Xcc-gr-gVq" name="hidden" keyPath="selection.@count" id="cUb-c8-liU">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                            </dictionary>
+                        </binding>
                         <binding destination="Xcc-gr-gVq" name="value" keyPath="selection.name" id="BId-Y4-uRb"/>
                     </connections>
                 </textField>
@@ -125,7 +135,11 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                     <connections>
-                        <binding destination="Xcc-gr-gVq" name="hidden" keyPath="selection.@count" id="k7r-H2-uY8"/>
+                        <binding destination="Xcc-gr-gVq" name="hidden" keyPath="selection.@count" id="kEK-A4-l8I">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                            </dictionary>
+                        </binding>
                         <binding destination="Xcc-gr-gVq" name="value" keyPath="selection.age" id="Uub-sJ-XK2"/>
                     </connections>
                 </textField>
@@ -148,7 +162,11 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                     <connections>
-                        <binding destination="Xcc-gr-gVq" name="hidden" keyPath="selection.@count" id="uoG-d1-yfK"/>
+                        <binding destination="Xcc-gr-gVq" name="hidden" keyPath="selection.@count" id="uGo-Zf-QKi">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                            </dictionary>
+                        </binding>
                         <binding destination="Xcc-gr-gVq" name="value" keyPath="selection.race" id="e4F-Mr-qf6"/>
                     </connections>
                 </textField>
@@ -171,7 +189,11 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                     <connections>
-                        <binding destination="Xcc-gr-gVq" name="hidden" keyPath="selection.@count" id="DXd-Ws-JrI"/>
+                        <binding destination="Xcc-gr-gVq" name="hidden" keyPath="selection.@count" id="Xcl-b6-97v">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                            </dictionary>
+                        </binding>
                         <binding destination="Xcc-gr-gVq" name="value" keyPath="selection.job" id="YCK-QU-Ob9"/>
                     </connections>
                 </textField>
@@ -186,7 +208,11 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                     <connections>
-                        <binding destination="Xcc-gr-gVq" name="hidden" keyPath="selection.@count" id="a4T-2o-Xby"/>
+                        <binding destination="Xcc-gr-gVq" name="hidden" keyPath="selection.@count" id="0Y8-XM-MMu">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                            </dictionary>
+                        </binding>
                         <binding destination="Xcc-gr-gVq" name="value" keyPath="selection.comments" id="8d4-xl-Ghy"/>
                     </connections>
                 </textField>
@@ -333,7 +359,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="a5u-Ix-dOa">
-                                    <rect key="frame" x="0.0" y="0.0" width="223" height="133"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="223" height="152"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <size key="minSize" width="264" height="152"/>
@@ -373,6 +399,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="addNPC:" target="-2" id="xMc-xi-lSX"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
