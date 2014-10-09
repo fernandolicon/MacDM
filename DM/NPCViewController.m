@@ -58,6 +58,7 @@
         ageTxt.stringValue = @"";
         jobTxt.stringValue = @"";
         commentsTxt.stringValue = @"";
+        
         [windowInfo makeFirstResponder:nameTxt];
     }
 }
