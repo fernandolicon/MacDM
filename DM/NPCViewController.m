@@ -29,7 +29,7 @@
     return self;
 }
 
-#pragma mark - NPCs
+#pragma mark -  Create NPCs
 
 - (IBAction)addNPC:(id)sender {
     NSString *name = nameTxt.stringValue;
@@ -68,21 +68,23 @@
     [windowInfo makeKeyAndOrderFront:windowInfo];
 }
 
+- (IBAction)closeWindow:(id)sender {
+    [windowInfo close];
+}
+
+#pragma mark - Edit NPC
+
 - (IBAction)openEditWindow:(id)sender {
+    [editWindow makeKeyAndOrderFront:editWindow];
 }
 
 - (IBAction)editNPC:(id)sender {
-    [editWindow makeKeyAndOrderFront:editWindow];
+    [editWindow makeFirstResponder:editBttn];
+    [editWindow close];
 }
 
 - (IBAction)closeEdit:(id)sender {
     [editWindow close];
 }
-
-- (IBAction)closeWindow:(id)sender {
-    [windowInfo close];
-}
-
-
 
 @end
