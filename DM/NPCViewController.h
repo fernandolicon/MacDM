@@ -20,9 +20,13 @@
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong) IBOutlet NSWindow *windowInfo;
 @property (strong) IBOutlet NSArrayController *npcArrayController;
+@property (strong) IBOutlet NSWindow *editWindow;
 
 - (IBAction)addNPC:(id)sender;
 - (IBAction)openForm:(id)sender;
+- (IBAction)openEditWindow:(id)sender;
+- (IBAction)editNPC:(id)sender;
+- (IBAction)closeEdit:(id)sender;
 
 - (IBAction)closeWindow:(id)sender;
 

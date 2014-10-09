@@ -16,6 +16,7 @@
 @implementation NPCViewController
 
 @synthesize windowInfo;
+@synthesize editWindow;
 @synthesize managedObjectContext;
 
 - (id)init
@@ -65,6 +66,17 @@
 
 - (IBAction)openForm:(id)sender {
     [windowInfo makeKeyAndOrderFront:windowInfo];
+}
+
+- (IBAction)openEditWindow:(id)sender {
+}
+
+- (IBAction)editNPC:(id)sender {
+    [editWindow makeKeyAndOrderFront:editWindow];
+}
+
+- (IBAction)closeEdit:(id)sender {
+    [editWindow close];
 }
 
 - (IBAction)closeWindow:(id)sender {
