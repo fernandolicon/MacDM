@@ -14,7 +14,8 @@
     __weak IBOutlet NSTextField *raceTxt;
     __weak IBOutlet NSTextField *ageTxt;
     __weak IBOutlet NSTextField *jobTxt;
-    __unsafe_unretained IBOutlet NSTextView *commentsTxt;
+    __weak IBOutlet NSTextField *commentsTxt;
+    
 }
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

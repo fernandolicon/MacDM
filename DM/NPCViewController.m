@@ -50,13 +50,14 @@
         NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
         [f setNumberStyle:NSNumberFormatterDecimalStyle];
         newNPC.age = [f numberFromString:ageTxt.stringValue];
-        newNPC.comments = job;
+        newNPC.job = job;
+        newNPC.comments = commentsTxt.stringValue;
     
         nameTxt.stringValue = @"";
         raceTxt.stringValue = @"";
         ageTxt.stringValue = @"";
         jobTxt.stringValue = @"";
-        [commentsTxt setString:@""];
+        commentsTxt.stringValue = @"";
         [windowInfo makeFirstResponder:nameTxt];
     }
 }
