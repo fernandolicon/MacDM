@@ -5,9 +5,13 @@
         <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="job" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="race" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="race" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Race" syncable="YES"/>
+    </entity>
+    <entity name="Race" representedClassName="Race" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="NPC" positionX="-1188" positionY="-1863" width="128" height="120"/>
+        <element name="NPC" positionX="-1530" positionY="-1776" width="128" height="120"/>
+        <element name="Race" positionX="-1217" positionY="-1800" width="128" height="58"/>
     </elements>
 </model>

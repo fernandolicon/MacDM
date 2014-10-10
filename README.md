@@ -14,6 +14,9 @@ In further versions the app will consider:
   - An easy create character section, with track of points (the 27 purchase points) and selection of races, class and feats.
   - Name generator for NPCs (directly in the form).
   - Name arrays for certain races (a special button to easy access).
+  - Keep track of enemies you control (with abilities and powers)
+  - Store races (with all its benefits).
+  - Connect races with the NPC or PC created.
   - Any other idea you could have.
   
 How can you help?

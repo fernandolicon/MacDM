@@ -26,6 +26,7 @@
 		A85298F719E343CB006FC577 /* DiceViewcontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85298F519E343CB006FC577 /* DiceViewcontroller.xib */; };
 		A85298FC19E3443E006FC577 /* NPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85298FA19E3443E006FC577 /* NPCViewController.m */; };
 		A85298FD19E3443E006FC577 /* NPCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85298FB19E3443E006FC577 /* NPCViewController.xib */; };
+		A8CD18DE19E78115005A016C /* Race.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CD18DD19E78115005A016C /* Race.m */; };
 		A8DC8ABC19E0BB2100950998 /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A8DC8ABB19E0BB2100950998 /* Bg.png */; };
 		A8E2D71219E22E36005851D0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2D71119E22E36005851D0 /* CoreData.framework */; };
 		A8EC2C2319E1B00400EFEEBF /* NPC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8EC2C2119E1B00400EFEEBF /* NPC.xcdatamodeld */; };
@@ -70,6 +71,8 @@
 		A85298F919E3443E006FC577 /* NPCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPCViewController.h; sourceTree = "<group>"; };
 		A85298FA19E3443E006FC577 /* NPCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPCViewController.m; sourceTree = "<group>"; };
 		A85298FB19E3443E006FC577 /* NPCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPCViewController.xib; sourceTree = "<group>"; };
+		A8CD18DC19E78115005A016C /* Race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Race.h; sourceTree = "<group>"; };
+		A8CD18DD19E78115005A016C /* Race.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Race.m; sourceTree = "<group>"; };
 		A8DC8ABB19E0BB2100950998 /* Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg.png; sourceTree = "<group>"; };
 		A8E2D71119E22E36005851D0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A8EC2C2219E1B00400EFEEBF /* NPC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NPC.xcdatamodel; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				A8EC2C2119E1B00400EFEEBF /* NPC.xcdatamodeld */,
+				A8CD18DC19E78115005A016C /* Race.h */,
+				A8CD18DD19E78115005A016C /* Race.m */,
 				A8EC2C2B19E1C84500EFEEBF /* NPC.h */,
 				A8EC2C2C19E1C84500EFEEBF /* NPC.m */,
 			);
@@ -313,6 +318,7 @@
 				A85298F619E343CB006FC577 /* DiceViewcontroller.m in Sources */,
 				A8EC2C2D19E1C84500EFEEBF /* NPC.m in Sources */,
 				A800289E19DFEA7500CD1126 /* main.m in Sources */,
+				A8CD18DE19E78115005A016C /* Race.m in Sources */,
 				A8EC2C2319E1B00400EFEEBF /* NPC.xcdatamodeld in Sources */,
 				A85298FC19E3443E006FC577 /* NPCViewController.m in Sources */,
 				A85298F119E325FE006FC577 /* MainView.m in Sources */,
