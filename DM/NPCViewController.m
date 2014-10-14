@@ -8,6 +8,7 @@
 
 #import "NPCViewController.h"
 #import "NPC.h"
+#import "Race.h"
 
 @interface NPCViewController ()
 
@@ -33,11 +34,10 @@
 
 - (IBAction)addNPC:(id)sender {
     NSString *name = nameTxt.stringValue;
-    NSString *race = raceTxt.stringValue;
     NSString *job = jobTxt.stringValue;
     int age = (int) ageTxt.stringValue;
     
-    if ((age <= 0) || ([ageTxt.stringValue isEqualToString:@""])  || ([name isEqualToString:@""]) || ([race isEqualToString:@""]) || ([job isEqualToString:@""])) {
+    if ((age <= 0) || ([ageTxt.stringValue isEqualToString:@""])  || ([name isEqualToString:@""]) || ([job isEqualToString:@""])) {
         NSAlert *alert = [[NSAlert alloc] init];
         [alert addButtonWithTitle:@"Ok"];
         [alert setMessageText:@"Datos incorrectos"];
@@ -53,9 +53,25 @@
         newNPC.age = [f numberFromString:ageTxt.stringValue];
         newNPC.job = job;
         newNPC.comments = commentsTxt.stringValue;
-    
+        
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        
+        NSEntityDescription *entitiy = [NSEntityDescription entityForName:@"Race" inManagedObjectContext:managedObjectContext];
+        [fetchRequest setEntity: entitiy];
+        
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(name = %@)", raceBox.stringValue];
+        
+        [fetchRequest setPredicate:predicate];
+        
+        NSError *error = nil;
+        NSArray *array = [managedObjectContext executeFetchRequest:fetchRequest error:&error];
+        
+        Race *selectedRace = [array objectAtIndex:0];
+        
+        
+        newNPC.race = selectedRace;
+        
         nameTxt.stringValue = @"";
-        raceTxt.stringValue = @"";
         ageTxt.stringValue = @"";
         jobTxt.stringValue = @"";
         commentsTxt.stringValue = @"";

@@ -13,17 +13,12 @@
     
     //New NPC form's fields
     __weak IBOutlet NSTextField *nameTxt;
-    __weak IBOutlet NSTextField *raceTxt;
     __weak IBOutlet NSTextField *ageTxt;
     __weak IBOutlet NSTextField *jobTxt;
     __weak IBOutlet NSTextField *commentsTxt;
+    __weak IBOutlet NSComboBox *raceBox;
     
     //Edit NPC form's fields
-    __weak IBOutlet NSTextField *editedNameTxt;
-    __weak IBOutlet NSTextField *editedRaceTxt;
-    __weak IBOutlet NSTextField *editedAgeTxt;
-    __weak IBOutlet NSTextField *editedJobTxt;
-    __weak IBOutlet NSTextField *editedCommentsTxt;
     __weak IBOutlet NSButton *editBttn;
 }
 
