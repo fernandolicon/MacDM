@@ -191,7 +191,18 @@
 #pragma mark - PrePopulate
 
 -(void)prePopulate {
-    if (![[NSUserDefaults standardUserDefaults] valueForKey:@"dm_FirstRun"]) {
+    
+    //First we need to check if there's data of Races
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entitiy = [NSEntityDescription entityForName:@"Race" inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity: entitiy];
+    
+    NSError *error = nil;
+    NSArray *array = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+
+    if (array.count == 0) {
         NSManagedObject *human = [[NSManagedObject alloc] initWithEntity:[NSEntityDescription entityForName:@"Race" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
         [human setValue:@"Humano" forKey:@"name"];
         
@@ -216,7 +227,10 @@
         NSManagedObject *dragonBorn = [[NSManagedObject alloc] initWithEntity:[NSEntityDescription entityForName:@"Race" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
         [dragonBorn setValue:@"Dragonborn" forKey:@"name"];
         
-        [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:@"sb_FirstRun"];
+        NSManagedObject *gnome = [[NSManagedObject alloc] initWithEntity:[NSEntityDescription entityForName:@"Race" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
+        [gnome setValue:@"Gnomo" forKey:@"name"];
+        
+        [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:@"dm_FirstRun"];
     }
 }
 
