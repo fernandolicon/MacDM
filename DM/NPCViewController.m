@@ -47,7 +47,7 @@
     }else{
         NPC *newNPC = [NSEntityDescription insertNewObjectForEntityForName:@"NPC" inManagedObjectContext:managedObjectContext];
         newNPC.name = name;
-        newNPC.race = race;
+        //newNPC.race = race;
         NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
         [f setNumberStyle:NSNumberFormatterDecimalStyle];
         newNPC.age = [f numberFromString:ageTxt.stringValue];
