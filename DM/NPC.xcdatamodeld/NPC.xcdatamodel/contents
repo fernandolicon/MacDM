@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13F34" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A388a" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="NPC" representedClassName="NPC" syncable="YES">
         <attribute name="age" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="job" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="race" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Race" syncable="YES"/>
+        <relationship name="race" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Race" inverseName="npcs" inverseEntity="Race" syncable="YES"/>
     </entity>
     <entity name="Race" representedClassName="Race" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="npcs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NPC" inverseName="race" inverseEntity="NPC" syncable="YES"/>
     </entity>
     <elements>
-        <element name="NPC" positionX="-1530" positionY="-1776" width="128" height="120"/>
-        <element name="Race" positionX="-1217" positionY="-1800" width="128" height="58"/>
+        <element name="NPC" positionX="115" positionY="-126" width="128" height="118"/>
+        <element name="Race" positionX="-200" positionY="-175" width="128" height="75"/>
     </elements>
 </model>
