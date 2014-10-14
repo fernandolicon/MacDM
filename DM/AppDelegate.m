@@ -29,7 +29,11 @@
     // 2. Add the view controller to the Window's content view
     [self.mainViewController showWindow:nil];
     
+    
     self.mainViewController.npcView.managedObjectContext = self.managedObjectContext;
+    
+    
+    [self prePopulate];
 }
 
 
@@ -38,7 +42,7 @@
 - (NSURL *)applicationDocumentsDirectory {
     // The directory the application uses to store the Core Data store file. This code uses a directory named "LFML.CoreDataExample" in the user's Application Support directory.
     NSURL *appSupportURL = [[[NSFileManager defaultManager] URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
-    return [appSupportURL URLByAppendingPathComponent:@"LFML.DM"];
+    return [appSupportURL URLByAppendingPathComponent:@"DungeonMaster"];
 }
 
 - (NSManagedObjectModel *)managedObjectModel {
@@ -78,7 +82,7 @@
     
     if (!shouldFail && !error) {
         NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-        NSURL *url = [applicationDocumentsDirectory URLByAppendingPathComponent:@"OSXDMObjC.storedata"];
+        NSURL *url = [applicationDocumentsDirectory URLByAppendingPathComponent:@"DungeonMaster.storedata"];
         if (![coordinator addPersistentStoreWithType:NSXMLStoreType configuration:nil URL:url options:nil error:&error]) {
             coordinator = nil;
         }
@@ -182,6 +186,38 @@
 #pragma mark - Toolbar
 - (BOOL)validateToolbarItem:(NSToolbarItem *)theItem{
     return YES;
+}
+
+#pragma mark - PrePopulate
+
+-(void)prePopulate {
+    if (![[NSUserDefaults standardUserDefaults] valueForKey:@"dm_FirstRun"]) {
+        NSManagedObject *human = [[NSManagedObject alloc] initWithEntity:[NSEntityDescription entityForName:@"Race" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
+        [human setValue:@"Humano" forKey:@"name"];
+        
+        NSManagedObject *elf = [[NSManagedObject alloc] initWithEntity:[NSEntityDescription entityForName:@"Race" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
+        [elf setValue:@"Elfo" forKey:@"name"];
+        
+        NSManagedObject *dwarf = [[NSManagedObject alloc] initWithEntity:[NSEntityDescription entityForName:@"Race" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
+        [dwarf setValue:@"Enano" forKey:@"name"];
+        
+        NSManagedObject *halfling = [[NSManagedObject alloc] initWithEntity:[NSEntityDescription entityForName:@"Race" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
+        [halfling setValue:@"Mediano" forKey:@"name"];
+        
+        NSManagedObject *halfElf = [[NSManagedObject alloc] initWithEntity:[NSEntityDescription entityForName:@"Race" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
+        [halfElf setValue:@"Mitad Elfo" forKey:@"name"];
+        
+        NSManagedObject *halfOrc = [[NSManagedObject alloc] initWithEntity:[NSEntityDescription entityForName:@"Race" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
+        [halfOrc setValue:@"Mitad Orco" forKey:@"name"];
+        
+        NSManagedObject *tiefling = [[NSManagedObject alloc] initWithEntity:[NSEntityDescription entityForName:@"Race" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
+        [tiefling setValue:@"Tiefling" forKey:@"name"];
+        
+        NSManagedObject *dragonBorn = [[NSManagedObject alloc] initWithEntity:[NSEntityDescription entityForName:@"Race" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
+        [dragonBorn setValue:@"Dragonborn" forKey:@"name"];
+        
+        [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:@"sb_FirstRun"];
+    }
 }
 
 @end
