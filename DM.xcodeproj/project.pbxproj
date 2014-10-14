@@ -26,11 +26,12 @@
 		A85298F719E343CB006FC577 /* DiceViewcontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85298F519E343CB006FC577 /* DiceViewcontroller.xib */; };
 		A85298FC19E3443E006FC577 /* NPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85298FA19E3443E006FC577 /* NPCViewController.m */; };
 		A85298FD19E3443E006FC577 /* NPCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85298FB19E3443E006FC577 /* NPCViewController.xib */; };
-		A8CD18DE19E78115005A016C /* Race.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CD18DD19E78115005A016C /* Race.m */; };
+		A86560D519ECA6460018C656 /* NPC.m in Sources */ = {isa = PBXBuildFile; fileRef = A86560D419ECA6460018C656 /* NPC.m */; };
+		A86560DA19ECB4E60018C656 /* D&D 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = A86560D919ECB4E60018C656 /* D&D 1024.png */; };
+		A87A7CC119ECF606005092D1 /* Race.m in Sources */ = {isa = PBXBuildFile; fileRef = A87A7CC019ECF606005092D1 /* Race.m */; };
 		A8DC8ABC19E0BB2100950998 /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A8DC8ABB19E0BB2100950998 /* Bg.png */; };
 		A8E2D71219E22E36005851D0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2D71119E22E36005851D0 /* CoreData.framework */; };
 		A8EC2C2319E1B00400EFEEBF /* NPC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8EC2C2119E1B00400EFEEBF /* NPC.xcdatamodeld */; };
-		A8EC2C2D19E1C84500EFEEBF /* NPC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EC2C2C19E1C84500EFEEBF /* NPC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,13 +72,14 @@
 		A85298F919E3443E006FC577 /* NPCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPCViewController.h; sourceTree = "<group>"; };
 		A85298FA19E3443E006FC577 /* NPCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPCViewController.m; sourceTree = "<group>"; };
 		A85298FB19E3443E006FC577 /* NPCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPCViewController.xib; sourceTree = "<group>"; };
-		A8CD18DC19E78115005A016C /* Race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Race.h; sourceTree = "<group>"; };
-		A8CD18DD19E78115005A016C /* Race.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Race.m; sourceTree = "<group>"; };
+		A86560D319ECA6460018C656 /* NPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPC.h; sourceTree = "<group>"; };
+		A86560D419ECA6460018C656 /* NPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPC.m; sourceTree = "<group>"; };
+		A86560D919ECB4E60018C656 /* D&D 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "D&D 1024.png"; sourceTree = "<group>"; };
+		A87A7CBF19ECF606005092D1 /* Race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Race.h; sourceTree = "<group>"; };
+		A87A7CC019ECF606005092D1 /* Race.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Race.m; sourceTree = "<group>"; };
 		A8DC8ABB19E0BB2100950998 /* Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg.png; sourceTree = "<group>"; };
 		A8E2D71119E22E36005851D0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A8EC2C2219E1B00400EFEEBF /* NPC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NPC.xcdatamodel; sourceTree = "<group>"; };
-		A8EC2C2B19E1C84500EFEEBF /* NPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPC.h; sourceTree = "<group>"; };
-		A8EC2C2C19E1C84500EFEEBF /* NPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				A85298EC19E30BC6006FC577 /* Npc.png */,
 				A85298EA19E30AE4006FC577 /* Dice.png */,
 				A8DC8ABB19E0BB2100950998 /* Bg.png */,
+				A86560D919ECB4E60018C656 /* D&D 1024.png */,
 				A80028C319E049DA00CD1126 /* D&D 512.png */,
 				A80028C519E04A4600CD1126 /* D&D 256.png */,
 				A80028C719E04A9700CD1126 /* D&D 128.png */,
@@ -194,11 +197,11 @@
 		A8EC2C2A19E1C65A00EFEEBF /* NPCClass */ = {
 			isa = PBXGroup;
 			children = (
+				A87A7CBF19ECF606005092D1 /* Race.h */,
+				A87A7CC019ECF606005092D1 /* Race.m */,
 				A8EC2C2119E1B00400EFEEBF /* NPC.xcdatamodeld */,
-				A8CD18DC19E78115005A016C /* Race.h */,
-				A8CD18DD19E78115005A016C /* Race.m */,
-				A8EC2C2B19E1C84500EFEEBF /* NPC.h */,
-				A8EC2C2C19E1C84500EFEEBF /* NPC.m */,
+				A86560D319ECA6460018C656 /* NPC.h */,
+				A86560D419ECA6460018C656 /* NPC.m */,
 			);
 			name = NPCClass;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				A85298FD19E3443E006FC577 /* NPCViewController.xib in Resources */,
 				A85298F719E343CB006FC577 /* DiceViewcontroller.xib in Resources */,
 				A80028C419E049DA00CD1126 /* D&D 512.png in Resources */,
+				A86560DA19ECB4E60018C656 /* D&D 1024.png in Resources */,
 				A85298EB19E30AE4006FC577 /* Dice.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,10 +319,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A80028A119DFEA7500CD1126 /* AppDelegate.m in Sources */,
+				A86560D519ECA6460018C656 /* NPC.m in Sources */,
 				A85298F619E343CB006FC577 /* DiceViewcontroller.m in Sources */,
-				A8EC2C2D19E1C84500EFEEBF /* NPC.m in Sources */,
 				A800289E19DFEA7500CD1126 /* main.m in Sources */,
-				A8CD18DE19E78115005A016C /* Race.m in Sources */,
+				A87A7CC119ECF606005092D1 /* Race.m in Sources */,
 				A8EC2C2319E1B00400EFEEBF /* NPC.xcdatamodeld in Sources */,
 				A85298FC19E3443E006FC577 /* NPCViewController.m in Sources */,
 				A85298F119E325FE006FC577 /* MainView.m in Sources */,
