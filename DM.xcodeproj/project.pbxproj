@@ -29,9 +29,9 @@
 		A86560D519ECA6460018C656 /* NPC.m in Sources */ = {isa = PBXBuildFile; fileRef = A86560D419ECA6460018C656 /* NPC.m */; };
 		A86560DA19ECB4E60018C656 /* D&D 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = A86560D919ECB4E60018C656 /* D&D 1024.png */; };
 		A87A7CC119ECF606005092D1 /* Race.m in Sources */ = {isa = PBXBuildFile; fileRef = A87A7CC019ECF606005092D1 /* Race.m */; };
+		A8BD1C0219ED9B5800F5D117 /* DM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8BD1C0019ED9B5800F5D117 /* DM.xcdatamodeld */; };
 		A8DC8ABC19E0BB2100950998 /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A8DC8ABB19E0BB2100950998 /* Bg.png */; };
 		A8E2D71219E22E36005851D0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2D71119E22E36005851D0 /* CoreData.framework */; };
-		A8EC2C2319E1B00400EFEEBF /* NPC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8EC2C2119E1B00400EFEEBF /* NPC.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,9 +77,9 @@
 		A86560D919ECB4E60018C656 /* D&D 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "D&D 1024.png"; sourceTree = "<group>"; };
 		A87A7CBF19ECF606005092D1 /* Race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Race.h; sourceTree = "<group>"; };
 		A87A7CC019ECF606005092D1 /* Race.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Race.m; sourceTree = "<group>"; };
+		A8BD1C0119ED9B5800F5D117 /* DM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DM.xcdatamodel; sourceTree = "<group>"; };
 		A8DC8ABB19E0BB2100950998 /* Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg.png; sourceTree = "<group>"; };
 		A8E2D71119E22E36005851D0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		A8EC2C2219E1B00400EFEEBF /* NPC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NPC.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,9 +197,9 @@
 		A8EC2C2A19E1C65A00EFEEBF /* NPCClass */ = {
 			isa = PBXGroup;
 			children = (
+				A8BD1C0019ED9B5800F5D117 /* DM.xcdatamodeld */,
 				A87A7CBF19ECF606005092D1 /* Race.h */,
 				A87A7CC019ECF606005092D1 /* Race.m */,
-				A8EC2C2119E1B00400EFEEBF /* NPC.xcdatamodeld */,
 				A86560D319ECA6460018C656 /* NPC.h */,
 				A86560D419ECA6460018C656 /* NPC.m */,
 			);
@@ -318,12 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8BD1C0219ED9B5800F5D117 /* DM.xcdatamodeld in Sources */,
 				A80028A119DFEA7500CD1126 /* AppDelegate.m in Sources */,
 				A86560D519ECA6460018C656 /* NPC.m in Sources */,
 				A85298F619E343CB006FC577 /* DiceViewcontroller.m in Sources */,
 				A800289E19DFEA7500CD1126 /* main.m in Sources */,
 				A87A7CC119ECF606005092D1 /* Race.m in Sources */,
-				A8EC2C2319E1B00400EFEEBF /* NPC.xcdatamodeld in Sources */,
 				A85298FC19E3443E006FC577 /* NPCViewController.m in Sources */,
 				A85298F119E325FE006FC577 /* MainView.m in Sources */,
 			);
@@ -526,13 +526,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A8EC2C2119E1B00400EFEEBF /* NPC.xcdatamodeld */ = {
+		A8BD1C0019ED9B5800F5D117 /* DM.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A8EC2C2219E1B00400EFEEBF /* NPC.xcdatamodel */,
+				A8BD1C0119ED9B5800F5D117 /* DM.xcdatamodel */,
 			);
-			currentVersion = A8EC2C2219E1B00400EFEEBF /* NPC.xcdatamodel */;
-			path = NPC.xcdatamodeld;
+			currentVersion = A8BD1C0119ED9B5800F5D117 /* DM.xcdatamodel */;
+			path = DM.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

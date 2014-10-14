@@ -15,8 +15,8 @@ In further versions the app will consider:
   - Name generator for NPCs (directly in the form).
   - Name arrays for certain races (a special button to easy access).
   - Keep track of enemies you control (with abilities and powers)
-  - Store races (with all its benefits).
-  - Connect races with the NPC or PC created.
+  - Store races benefits.
+  - Connect races with the PCs created.
   - Any other idea you could have.
   
 How can you help?
