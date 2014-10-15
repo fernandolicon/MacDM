@@ -7,6 +7,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="race" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Race" inverseName="npcs" inverseEntity="Race" syncable="YES"/>
     </entity>
+    <entity name="PC" syncable="YES"/>
     <entity name="Race" representedClassName="Race" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="npcs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NPC" inverseName="race" inverseEntity="NPC" syncable="YES"/>
@@ -14,5 +15,6 @@
     <elements>
         <element name="NPC" positionX="115" positionY="-126" width="128" height="118"/>
         <element name="Race" positionX="-200" positionY="-175" width="128" height="75"/>
+        <element name="PC" positionX="-45" positionY="-108" width="128" height="45"/>
     </elements>
 </model>

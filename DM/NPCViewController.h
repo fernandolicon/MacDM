@@ -16,7 +16,7 @@
     __weak IBOutlet NSTextField *ageTxt;
     __weak IBOutlet NSTextField *jobTxt;
     __weak IBOutlet NSTextField *commentsTxt;
-    __weak IBOutlet NSComboBox *raceBox;
+    __weak IBOutlet NSPopUpButton *racePopUp;
     
     //Edit NPC form's fields
     __weak IBOutlet NSButton *editBttn;

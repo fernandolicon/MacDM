@@ -54,12 +54,13 @@
         newNPC.job = job;
         newNPC.comments = commentsTxt.stringValue;
         
+        
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
         
         NSEntityDescription *entitiy = [NSEntityDescription entityForName:@"Race" inManagedObjectContext:managedObjectContext];
         [fetchRequest setEntity: entitiy];
         
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(name = %@)", raceBox.stringValue];
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(name = %@)", racePopUp.titleOfSelectedItem];
         
         [fetchRequest setPredicate:predicate];
         
@@ -81,6 +82,7 @@
 }
 
 - (IBAction)openForm:(id)sender {
+    [windowInfo setBackgroundColor:[NSColor whiteColor]];
     [windowInfo makeKeyAndOrderFront:windowInfo];
 }
 
@@ -91,6 +93,7 @@
 #pragma mark - Edit NPC
 
 - (IBAction)openEditWindow:(id)sender {
+    [editWindow setBackgroundColor:[NSColor whiteColor]];
     [editWindow makeKeyAndOrderFront:editWindow];
 }
 
