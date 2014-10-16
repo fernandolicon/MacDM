@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 @class NPCViewController;
 @class DiceViewcontroller;
+@class PCViewController;
 
 @interface MainView : NSWindowController<NSToolbarDelegate>{
     NSInteger currentViewTag;
@@ -16,6 +17,7 @@
 
 @property (strong, nonatomic) NPCViewController *npcView;
 @property (strong, nonatomic) DiceViewcontroller *diceView;
+@property (strong, nonatomic) PCViewController *pcView;
 
 - (IBAction)presentNewView:(id)sender;
 

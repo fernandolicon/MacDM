@@ -9,6 +9,7 @@
 #import "MainView.h"
 #import "NPCViewController.h"
 #import "DiceViewcontroller.h"
+#import "PCViewController.h"
 
 @interface MainView ()
 
@@ -18,6 +19,7 @@
 
 @synthesize npcView;
 @synthesize diceView;
+@synthesize pcView;
 
 - (id) init{
     self = [super initWithWindowNibName:@"MainView"];
@@ -81,6 +83,15 @@
                 diceView = [[DiceViewcontroller alloc] initWithNibName:@"DiceViewcontroller" bundle:nil];
             }
             view = diceView.view;
+            return view;
+            break;
+        }
+        case 2:
+        {
+            if (!pcView) {
+                pcView = [[PCViewController alloc] initWithNibName:@"PCViewController" bundle:nil];
+            }
+            view = pcView.view;
             return view;
             break;
         }
