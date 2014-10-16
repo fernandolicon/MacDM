@@ -19,7 +19,7 @@
 		A80028CC19E04AFE00CD1126 /* D&D 32.png in Resources */ = {isa = PBXBuildFile; fileRef = A80028CB19E04AFE00CD1126 /* D&D 32.png */; };
 		A80028CF19E04B4300CD1126 /* D&D 16.png in Resources */ = {isa = PBXBuildFile; fileRef = A80028CE19E04B4300CD1126 /* D&D 16.png */; };
 		A85298EB19E30AE4006FC577 /* DiceTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = A85298EA19E30AE4006FC577 /* DiceTemplate.png */; };
-		A85298ED19E30BC6006FC577 /* NpcTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = A85298EC19E30BC6006FC577 /* NpcTemplate.png */; };
+		A85298ED19E30BC6006FC577 /* PCTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = A85298EC19E30BC6006FC577 /* PCTemplate.png */; };
 		A85298F119E325FE006FC577 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = A85298EF19E325FE006FC577 /* MainView.m */; };
 		A85298F219E325FE006FC577 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85298F019E325FE006FC577 /* MainView.xib */; };
 		A85298F619E343CB006FC577 /* DiceViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = A85298F419E343CB006FC577 /* DiceViewcontroller.m */; };
@@ -30,6 +30,10 @@
 		A86560DA19ECB4E60018C656 /* D&D 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = A86560D919ECB4E60018C656 /* D&D 1024.png */; };
 		A87A7CC119ECF606005092D1 /* Race.m in Sources */ = {isa = PBXBuildFile; fileRef = A87A7CC019ECF606005092D1 /* Race.m */; };
 		A8BD1C0219ED9B5800F5D117 /* DM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8BD1C0019ED9B5800F5D117 /* DM.xcdatamodeld */; };
+		A8C757FA19EF53980083B04B /* NPCTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = A8C757F919EF53980083B04B /* NPCTemplate.png */; };
+		A8C757FC19EF5C200083B04B /* NPCTemplate2.png in Resources */ = {isa = PBXBuildFile; fileRef = A8C757FB19EF5C200083B04B /* NPCTemplate2.png */; };
+		A8C7580019EF5C680083B04B /* PCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C757FE19EF5C680083B04B /* PCViewController.m */; };
+		A8C7580119EF5C680083B04B /* PCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C757FF19EF5C680083B04B /* PCViewController.xib */; };
 		A8DC8ABC19E0BB2100950998 /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A8DC8ABB19E0BB2100950998 /* Bg.png */; };
 		A8E2D71219E22E36005851D0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2D71119E22E36005851D0 /* CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -62,7 +66,7 @@
 		A80028CB19E04AFE00CD1126 /* D&D 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "D&D 32.png"; sourceTree = "<group>"; };
 		A80028CE19E04B4300CD1126 /* D&D 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "D&D 16.png"; sourceTree = "<group>"; };
 		A85298EA19E30AE4006FC577 /* DiceTemplate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DiceTemplate.png; path = Icons/DiceTemplate.png; sourceTree = "<group>"; };
-		A85298EC19E30BC6006FC577 /* NpcTemplate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NpcTemplate.png; path = Icons/NpcTemplate.png; sourceTree = "<group>"; };
+		A85298EC19E30BC6006FC577 /* PCTemplate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCTemplate.png; path = Icons/PCTemplate.png; sourceTree = "<group>"; };
 		A85298EE19E325FE006FC577 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		A85298EF19E325FE006FC577 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		A85298F019E325FE006FC577 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
@@ -78,6 +82,11 @@
 		A87A7CBF19ECF606005092D1 /* Race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Race.h; sourceTree = "<group>"; };
 		A87A7CC019ECF606005092D1 /* Race.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Race.m; sourceTree = "<group>"; };
 		A8BD1C0119ED9B5800F5D117 /* DM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DM.xcdatamodel; sourceTree = "<group>"; };
+		A8C757F919EF53980083B04B /* NPCTemplate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NPCTemplate.png; path = Icons/NPCTemplate.png; sourceTree = "<group>"; };
+		A8C757FB19EF5C200083B04B /* NPCTemplate2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NPCTemplate2.png; path = Icons/NPCTemplate2.png; sourceTree = "<group>"; };
+		A8C757FD19EF5C680083B04B /* PCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCViewController.h; sourceTree = "<group>"; };
+		A8C757FE19EF5C680083B04B /* PCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCViewController.m; sourceTree = "<group>"; };
+		A8C757FF19EF5C680083B04B /* PCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PCViewController.xib; sourceTree = "<group>"; };
 		A8DC8ABB19E0BB2100950998 /* Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg.png; sourceTree = "<group>"; };
 		A8E2D71119E22E36005851D0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -130,6 +139,7 @@
 				A85298EE19E325FE006FC577 /* MainView.h */,
 				A85298EF19E325FE006FC577 /* MainView.m */,
 				A85298F019E325FE006FC577 /* MainView.xib */,
+				A8C7580219EF5C6D0083B04B /* PCView */,
 				A85298FE19E3444A006FC577 /* NPCView */,
 				A85298F819E343CF006FC577 /* DiceView */,
 				A800289B19DFEA7500CD1126 /* Supporting Files */,
@@ -141,7 +151,9 @@
 		A800289B19DFEA7500CD1126 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A85298EC19E30BC6006FC577 /* NpcTemplate.png */,
+				A8C757FB19EF5C200083B04B /* NPCTemplate2.png */,
+				A8C757F919EF53980083B04B /* NPCTemplate.png */,
+				A85298EC19E30BC6006FC577 /* PCTemplate.png */,
 				A85298EA19E30AE4006FC577 /* DiceTemplate.png */,
 				A8DC8ABB19E0BB2100950998 /* Bg.png */,
 				A86560D919ECB4E60018C656 /* D&D 1024.png */,
@@ -192,6 +204,16 @@
 				A85298FB19E3443E006FC577 /* NPCViewController.xib */,
 			);
 			name = NPCView;
+			sourceTree = "<group>";
+		};
+		A8C7580219EF5C6D0083B04B /* PCView */ = {
+			isa = PBXGroup;
+			children = (
+				A8C757FD19EF5C680083B04B /* PCViewController.h */,
+				A8C757FE19EF5C680083B04B /* PCViewController.m */,
+				A8C757FF19EF5C680083B04B /* PCViewController.xib */,
+			);
+			name = PCView;
 			sourceTree = "<group>";
 		};
 		A8EC2C2A19E1C65A00EFEEBF /* NPCClass */ = {
@@ -288,7 +310,7 @@
 			files = (
 				A8DC8ABC19E0BB2100950998 /* Bg.png in Resources */,
 				A80028C819E04A9700CD1126 /* D&D 128.png in Resources */,
-				A85298ED19E30BC6006FC577 /* NpcTemplate.png in Resources */,
+				A85298ED19E30BC6006FC577 /* PCTemplate.png in Resources */,
 				A80028CA19E04AB600CD1126 /* D&D 64.png in Resources */,
 				A80028CF19E04B4300CD1126 /* D&D 16.png in Resources */,
 				A80028CC19E04AFE00CD1126 /* D&D 32.png in Resources */,
@@ -299,8 +321,11 @@
 				A85298FD19E3443E006FC577 /* NPCViewController.xib in Resources */,
 				A85298F719E343CB006FC577 /* DiceViewcontroller.xib in Resources */,
 				A80028C419E049DA00CD1126 /* D&D 512.png in Resources */,
+				A8C7580119EF5C680083B04B /* PCViewController.xib in Resources */,
+				A8C757FC19EF5C200083B04B /* NPCTemplate2.png in Resources */,
 				A86560DA19ECB4E60018C656 /* D&D 1024.png in Resources */,
 				A85298EB19E30AE4006FC577 /* DiceTemplate.png in Resources */,
+				A8C757FA19EF53980083B04B /* NPCTemplate.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +350,7 @@
 				A800289E19DFEA7500CD1126 /* main.m in Sources */,
 				A87A7CC119ECF606005092D1 /* Race.m in Sources */,
 				A85298FC19E3443E006FC577 /* NPCViewController.m in Sources */,
+				A8C7580019EF5C680083B04B /* PCViewController.m in Sources */,
 				A85298F119E325FE006FC577 /* MainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

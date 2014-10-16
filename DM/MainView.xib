@@ -7,7 +7,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainView">
             <connections>
-                <outlet property="viewProve" destination="VRe-93-dDp" id="fSI-rT-sIV"/>
                 <outlet property="window" destination="U8B-9q-RlT" id="6FK-Tg-rhg"/>
             </connections>
         </customObject>
@@ -24,9 +23,6 @@
             </view>
             <toolbar key="toolbar" implicitIdentifier="9E541FD4-1303-4EC1-A7C1-9F270E0F1ECC" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="small" id="IdT-jX-5fe">
                 <allowedToolbarItems>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="q5h-Q2-9fA"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Un1-O2-ZwR"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="jcr-BO-Ytz"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="km2-M8-U1b"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="s6r-VK-4vH"/>
                     <toolbarItem implicitItemIdentifier="A718526D-AE00-467A-89D1-4C8462947EAF" label="Dados" paletteLabel="Dados" image="DiceTemplate" id="Svn-4j-Rf8">
@@ -34,15 +30,22 @@
                             <action selector="presentNewView:" target="-2" id="5Ar-rz-m8s"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="3F6AE22D-A440-4A97-8C7C-EB53E6B272D6" label="NPC" paletteLabel="NPC" tag="1" image="NpcTemplate" id="Jfc-8Q-ky2">
+                    <toolbarItem implicitItemIdentifier="3F6AE22D-A440-4A97-8C7C-EB53E6B272D6" label="DM" paletteLabel="DM" tag="1" image="NPCTemplate2" id="Jfc-8Q-ky2">
                         <connections>
                             <action selector="presentNewView:" target="-2" id="RDK-qc-Ax4"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSeparatorItem" id="B6P-HQ-aO1"/>
+                    <toolbarItem implicitItemIdentifier="3E56ECFD-8A11-4ECC-AB35-D330EFAB7B4C" label="PC" paletteLabel="PC" tag="2" image="PCTemplate" id="ghR-Ke-S3I">
+                        <connections>
+                            <action selector="presentNewView:" target="-2" id="aQW-wh-6nf"/>
                         </connections>
                     </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="s6r-VK-4vH"/>
                     <toolbarItem reference="Jfc-8Q-ky2"/>
+                    <toolbarItem reference="ghR-Ke-S3I"/>
                     <toolbarItem reference="Svn-4j-Rf8"/>
                     <toolbarItem reference="s6r-VK-4vH"/>
                 </defaultToolbarItems>
@@ -55,6 +58,7 @@
     </objects>
     <resources>
         <image name="DiceTemplate" width="64.080001831054688" height="62.400001525878906"/>
-        <image name="NpcTemplate" width="64.080001831054688" height="64.319999694824219"/>
+        <image name="NPCTemplate2" width="70.080001831054688" height="69.839996337890625"/>
+        <image name="PCTemplate" width="64.080001831054688" height="64.319999694824219"/>
     </resources>
 </document>
