@@ -10,4 +10,6 @@
 
 @interface PCViewController : NSViewController
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 @end
