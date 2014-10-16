@@ -26,14 +26,19 @@
 		A85298F719E343CB006FC577 /* DiceViewcontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85298F519E343CB006FC577 /* DiceViewcontroller.xib */; };
 		A85298FC19E3443E006FC577 /* NPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85298FA19E3443E006FC577 /* NPCViewController.m */; };
 		A85298FD19E3443E006FC577 /* NPCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85298FB19E3443E006FC577 /* NPCViewController.xib */; };
-		A86560D519ECA6460018C656 /* NPC.m in Sources */ = {isa = PBXBuildFile; fileRef = A86560D419ECA6460018C656 /* NPC.m */; };
 		A86560DA19ECB4E60018C656 /* D&D 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = A86560D919ECB4E60018C656 /* D&D 1024.png */; };
-		A87A7CC119ECF606005092D1 /* Race.m in Sources */ = {isa = PBXBuildFile; fileRef = A87A7CC019ECF606005092D1 /* Race.m */; };
 		A8BD1C0219ED9B5800F5D117 /* DM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8BD1C0019ED9B5800F5D117 /* DM.xcdatamodeld */; };
 		A8C757FA19EF53980083B04B /* NPCTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = A8C757F919EF53980083B04B /* NPCTemplate.png */; };
 		A8C757FC19EF5C200083B04B /* NPCTemplate2.png in Resources */ = {isa = PBXBuildFile; fileRef = A8C757FB19EF5C200083B04B /* NPCTemplate2.png */; };
 		A8C7580019EF5C680083B04B /* PCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C757FE19EF5C680083B04B /* PCViewController.m */; };
 		A8C7580119EF5C680083B04B /* PCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C757FF19EF5C680083B04B /* PCViewController.xib */; };
+		A8C7580519F01D400083B04B /* Skill.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C7580419F01D400083B04B /* Skill.m */; };
+		A8C7580819F01D410083B04B /* Race.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C7580719F01D410083B04B /* Race.m */; };
+		A8C7580B19F01D410083B04B /* Atributes.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C7580A19F01D410083B04B /* Atributes.m */; };
+		A8C7580E19F01D410083B04B /* NPC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C7580D19F01D410083B04B /* NPC.m */; };
+		A8C7581119F01D410083B04B /* UserClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C7581019F01D410083B04B /* UserClass.m */; };
+		A8C7581419F01D410083B04B /* Weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C7581319F01D410083B04B /* Weapon.m */; };
+		A8C7581719F01D410083B04B /* PC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C7581619F01D410083B04B /* PC.m */; };
 		A8DC8ABC19E0BB2100950998 /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A8DC8ABB19E0BB2100950998 /* Bg.png */; };
 		A8E2D71219E22E36005851D0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2D71119E22E36005851D0 /* CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -76,17 +81,27 @@
 		A85298F919E3443E006FC577 /* NPCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPCViewController.h; sourceTree = "<group>"; };
 		A85298FA19E3443E006FC577 /* NPCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPCViewController.m; sourceTree = "<group>"; };
 		A85298FB19E3443E006FC577 /* NPCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPCViewController.xib; sourceTree = "<group>"; };
-		A86560D319ECA6460018C656 /* NPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPC.h; sourceTree = "<group>"; };
-		A86560D419ECA6460018C656 /* NPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPC.m; sourceTree = "<group>"; };
 		A86560D919ECB4E60018C656 /* D&D 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "D&D 1024.png"; sourceTree = "<group>"; };
-		A87A7CBF19ECF606005092D1 /* Race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Race.h; sourceTree = "<group>"; };
-		A87A7CC019ECF606005092D1 /* Race.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Race.m; sourceTree = "<group>"; };
 		A8BD1C0119ED9B5800F5D117 /* DM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DM.xcdatamodel; sourceTree = "<group>"; };
 		A8C757F919EF53980083B04B /* NPCTemplate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NPCTemplate.png; path = Icons/NPCTemplate.png; sourceTree = "<group>"; };
 		A8C757FB19EF5C200083B04B /* NPCTemplate2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NPCTemplate2.png; path = Icons/NPCTemplate2.png; sourceTree = "<group>"; };
 		A8C757FD19EF5C680083B04B /* PCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCViewController.h; sourceTree = "<group>"; };
 		A8C757FE19EF5C680083B04B /* PCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCViewController.m; sourceTree = "<group>"; };
 		A8C757FF19EF5C680083B04B /* PCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PCViewController.xib; sourceTree = "<group>"; };
+		A8C7580319F01D400083B04B /* Skill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skill.h; sourceTree = "<group>"; };
+		A8C7580419F01D400083B04B /* Skill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Skill.m; sourceTree = "<group>"; };
+		A8C7580619F01D410083B04B /* Race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Race.h; sourceTree = "<group>"; };
+		A8C7580719F01D410083B04B /* Race.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Race.m; sourceTree = "<group>"; };
+		A8C7580919F01D410083B04B /* Atributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atributes.h; sourceTree = "<group>"; };
+		A8C7580A19F01D410083B04B /* Atributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atributes.m; sourceTree = "<group>"; };
+		A8C7580C19F01D410083B04B /* NPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPC.h; sourceTree = "<group>"; };
+		A8C7580D19F01D410083B04B /* NPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPC.m; sourceTree = "<group>"; };
+		A8C7580F19F01D410083B04B /* UserClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserClass.h; sourceTree = "<group>"; };
+		A8C7581019F01D410083B04B /* UserClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserClass.m; sourceTree = "<group>"; };
+		A8C7581219F01D410083B04B /* Weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weapon.h; sourceTree = "<group>"; };
+		A8C7581319F01D410083B04B /* Weapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weapon.m; sourceTree = "<group>"; };
+		A8C7581519F01D410083B04B /* PC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PC.h; sourceTree = "<group>"; };
+		A8C7581619F01D410083B04B /* PC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PC.m; sourceTree = "<group>"; };
 		A8DC8ABB19E0BB2100950998 /* Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg.png; sourceTree = "<group>"; };
 		A8E2D71119E22E36005851D0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -143,7 +158,7 @@
 				A85298FE19E3444A006FC577 /* NPCView */,
 				A85298F819E343CF006FC577 /* DiceView */,
 				A800289B19DFEA7500CD1126 /* Supporting Files */,
-				A8EC2C2A19E1C65A00EFEEBF /* NPCClass */,
+				A8EC2C2A19E1C65A00EFEEBF /* DMClass */,
 			);
 			path = DM;
 			sourceTree = "<group>";
@@ -216,16 +231,26 @@
 			name = PCView;
 			sourceTree = "<group>";
 		};
-		A8EC2C2A19E1C65A00EFEEBF /* NPCClass */ = {
+		A8EC2C2A19E1C65A00EFEEBF /* DMClass */ = {
 			isa = PBXGroup;
 			children = (
 				A8BD1C0019ED9B5800F5D117 /* DM.xcdatamodeld */,
-				A87A7CBF19ECF606005092D1 /* Race.h */,
-				A87A7CC019ECF606005092D1 /* Race.m */,
-				A86560D319ECA6460018C656 /* NPC.h */,
-				A86560D419ECA6460018C656 /* NPC.m */,
+				A8C7581519F01D410083B04B /* PC.h */,
+				A8C7581619F01D410083B04B /* PC.m */,
+				A8C7581219F01D410083B04B /* Weapon.h */,
+				A8C7581319F01D410083B04B /* Weapon.m */,
+				A8C7580F19F01D410083B04B /* UserClass.h */,
+				A8C7581019F01D410083B04B /* UserClass.m */,
+				A8C7580C19F01D410083B04B /* NPC.h */,
+				A8C7580D19F01D410083B04B /* NPC.m */,
+				A8C7580919F01D410083B04B /* Atributes.h */,
+				A8C7580A19F01D410083B04B /* Atributes.m */,
+				A8C7580619F01D410083B04B /* Race.h */,
+				A8C7580719F01D410083B04B /* Race.m */,
+				A8C7580319F01D400083B04B /* Skill.h */,
+				A8C7580419F01D400083B04B /* Skill.m */,
 			);
-			name = NPCClass;
+			name = DMClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,15 +368,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8C7580E19F01D410083B04B /* NPC.m in Sources */,
 				A8BD1C0219ED9B5800F5D117 /* DM.xcdatamodeld in Sources */,
+				A8C7580819F01D410083B04B /* Race.m in Sources */,
+				A8C7580519F01D400083B04B /* Skill.m in Sources */,
 				A80028A119DFEA7500CD1126 /* AppDelegate.m in Sources */,
-				A86560D519ECA6460018C656 /* NPC.m in Sources */,
 				A85298F619E343CB006FC577 /* DiceViewcontroller.m in Sources */,
+				A8C7581419F01D410083B04B /* Weapon.m in Sources */,
+				A8C7580B19F01D410083B04B /* Atributes.m in Sources */,
 				A800289E19DFEA7500CD1126 /* main.m in Sources */,
-				A87A7CC119ECF606005092D1 /* Race.m in Sources */,
 				A85298FC19E3443E006FC577 /* NPCViewController.m in Sources */,
+				A8C7581719F01D410083B04B /* PC.m in Sources */,
 				A8C7580019EF5C680083B04B /* PCViewController.m in Sources */,
 				A85298F119E325FE006FC577 /* MainView.m in Sources */,
+				A8C7581119F01D410083B04B /* UserClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,21 +1,17 @@
 //
-//  NPC.m
+//  UserClass.m
 //  DM
 //
 //  Created by Luis Fernando Mata Licón on 16/10/14.
 //  Copyright (c) 2014 Luis Fernando Mata. All rights reserved.
 //
 
-#import "NPC.h"
-#import "Race.h"
+#import "UserClass.h"
 
 
-@implementation NPC
+@implementation UserClass
 
-@dynamic age;
-@dynamic comments;
-@dynamic job;
 @dynamic name;
-@dynamic race;
+@dynamic pcs;
 
 @end

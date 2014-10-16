@@ -1,5 +1,5 @@
 //
-//  Race.h
+//  UserClass.h
 //  DM
 //
 //  Created by Luis Fernando Mata Licón on 16/10/14.
@@ -9,21 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class NPC;
 
-@interface Race : NSManagedObject
+@interface UserClass : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSSet *npcs;
 @property (nonatomic, retain) NSSet *pcs;
 @end
 
-@interface Race (CoreDataGeneratedAccessors)
-
-- (void)addNpcsObject:(NPC *)value;
-- (void)removeNpcsObject:(NPC *)value;
-- (void)addNpcs:(NSSet *)values;
-- (void)removeNpcs:(NSSet *)values;
+@interface UserClass (CoreDataGeneratedAccessors)
 
 - (void)addPcsObject:(NSManagedObject *)value;
 - (void)removePcsObject:(NSManagedObject *)value;
