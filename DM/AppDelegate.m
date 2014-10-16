@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainView.h"
 #import "NPCViewController.h"
+#import "PCViewController.h"
 
 @interface AppDelegate ()
 
@@ -31,9 +32,17 @@
     
     
     self.mainViewController.npcView.managedObjectContext = self.managedObjectContext;
+    self.mainViewController.pcView.managedObjectContext = self.managedObjectContext;
     
     
     [self prePopulate];
+}
+
+
+
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag{
+    [self.mainViewController showWindow:nil];
+    return YES;
 }
 
 
