@@ -2,14 +2,14 @@
 //  Race.h
 //  DM
 //
-//  Created by Luis Fernando Mata Licón on 16/10/14.
+//  Created by Luis Fernando Mata Licón on 17/10/14.
 //  Copyright (c) 2014 Luis Fernando Mata. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class NPC;
+@class NPC, PC;
 
 @interface Race : NSManagedObject
 
@@ -25,8 +25,8 @@
 - (void)addNpcs:(NSSet *)values;
 - (void)removeNpcs:(NSSet *)values;
 
-- (void)addPcsObject:(NSManagedObject *)value;
-- (void)removePcsObject:(NSManagedObject *)value;
+- (void)addPcsObject:(PC *)value;
+- (void)removePcsObject:(PC *)value;
 - (void)addPcs:(NSSet *)values;
 - (void)removePcs:(NSSet *)values;
 

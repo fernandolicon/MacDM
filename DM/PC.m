@@ -2,15 +2,12 @@
 //  PC.m
 //  DM
 //
-//  Created by Luis Fernando Mata Licón on 16/10/14.
+//  Created by Luis Fernando Mata Licón on 17/10/14.
 //  Copyright (c) 2014 Luis Fernando Mata. All rights reserved.
 //
 
 #import "PC.h"
-#import "Atributes.h"
 #import "Race.h"
-#import "Skill.h"
-#import "UserClass.h"
 #import "Weapon.h"
 
 
