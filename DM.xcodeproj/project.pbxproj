@@ -40,6 +40,7 @@
 		A8E7B60319F1EB6400D8742B /* Atributes.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E7B60219F1EB6400D8742B /* Atributes.m */; };
 		A8E7B60619F1EB6400D8742B /* Skill.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E7B60519F1EB6400D8742B /* Skill.m */; };
 		A8E7B60919F1EB6400D8742B /* NPC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E7B60819F1EB6400D8742B /* NPC.m */; };
+		A8E7B60C19F1EC2200D8742B /* DM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8E7B60A19F1EC2200D8742B /* DM.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		A8E7B60519F1EB6400D8742B /* Skill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Skill.m; sourceTree = "<group>"; };
 		A8E7B60719F1EB6400D8742B /* NPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPC.h; sourceTree = "<group>"; };
 		A8E7B60819F1EB6400D8742B /* NPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPC.m; sourceTree = "<group>"; };
+		A8E7B60B19F1EC2200D8742B /* DM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DM.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 		A8EC2C2A19E1C65A00EFEEBF /* DMClass */ = {
 			isa = PBXGroup;
 			children = (
+				A8E7B60A19F1EC2200D8742B /* DM.xcdatamodeld */,
 				A8E7B60719F1EB6400D8742B /* NPC.h */,
 				A8E7B60819F1EB6400D8742B /* NPC.m */,
 				A8E7B60419F1EB6400D8742B /* Skill.h */,
@@ -377,6 +380,7 @@
 				A85298FC19E3443E006FC577 /* NPCViewController.m in Sources */,
 				A8E7B5F719F1EB6300D8742B /* Weapon.m in Sources */,
 				A8C7580019EF5C680083B04B /* PCViewController.m in Sources */,
+				A8E7B60C19F1EC2200D8742B /* DM.xcdatamodeld in Sources */,
 				A85298F119E325FE006FC577 /* MainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,6 +580,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A8E7B60A19F1EC2200D8742B /* DM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A8E7B60B19F1EC2200D8742B /* DM.xcdatamodel */,
+			);
+			currentVersion = A8E7B60B19F1EC2200D8742B /* DM.xcdatamodel */;
+			path = DM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A800289019DFEA7500CD1126 /* Project object */;
 }
