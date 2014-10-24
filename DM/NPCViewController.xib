@@ -33,8 +33,6 @@
                     <buttonCell key="cell" type="square" title="+" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9mC-ek-O9s">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
-                        <string key="keyEquivalent">n</string>
-                        <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                     </buttonCell>
                     <connections>
                         <action selector="openForm:" target="-2" id="Rd0-8c-MAb"/>
@@ -48,10 +46,6 @@
                     <buttonCell key="cell" type="square" title="-" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LgH-Jj-K0t">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
-                        <string key="keyEquivalent" base64-UTF8="YES">
-CA
-</string>
-                        <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                     </buttonCell>
                     <connections>
                         <action selector="remove:" target="Xcc-gr-gVq" id="WYD-rX-lSF"/>
@@ -244,8 +238,6 @@ CA
                     <buttonCell key="cell" type="smallSquare" title="Editar" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="w9z-zj-1SV">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
-                        <string key="keyEquivalent">e</string>
-                        <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                     </buttonCell>
                     <connections>
                         <action selector="openEditWindow:" target="-2" id="bwz-rS-IIZ"/>
@@ -295,6 +287,134 @@ CA
             </constraints>
             <point key="canvasLocation" x="139" y="620.5"/>
         </view>
+        <menu title="Main Menu" systemMenu="main" id="7Td-ww-sim">
+            <items>
+                <menuItem title="DM" id="Hlv-p9-7LU">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="DM" systemMenu="apple" id="DSg-Ym-CGy">
+                        <items>
+                            <menuItem title="About DM" id="toW-dh-Tx6">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="7Mu-xY-sI5"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="Xvm-yj-OXI"/>
+                            <menuItem title="Preferences…" keyEquivalent="," id="hxh-Xe-Idf"/>
+                            <menuItem isSeparatorItem="YES" id="Qwo-En-J1s"/>
+                            <menuItem title="Services" id="RdV-Ll-Ug7">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Services" systemMenu="services" id="tLM-HN-qlj"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="Vyw-Si-I4h"/>
+                            <menuItem title="Hide DM" keyEquivalent="h" id="2lX-tW-3XU">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="aUq-h8-OJU"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="qZ8-7h-zuy">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="0JL-nu-h0b"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="NoC-rp-3sM">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="VpQ-px-ukL"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="TYD-h2-0Qd"/>
+                            <menuItem title="Quit DM" keyEquivalent="q" id="zRq-Lq-GJC">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="SWB-9L-l5n"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="J2M-9v-X4t">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="File" id="hkt-KB-88W">
+                        <items>
+                            <menuItem title="New" keyEquivalent="n" id="V09-cg-a1i">
+                                <connections>
+                                    <action selector="openForm:" target="-2" id="iii-NX-fp3"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Edit" keyEquivalent="e" id="S7A-5R-5JB" userLabel="Edit">
+                                <connections>
+                                    <action selector="openEditWindow:" target="-2" id="n4w-u4-nvZ"/>
+                                    <binding destination="Xcc-gr-gVq" name="enabled" keyPath="selection.@count" id="RdY-Cs-Szn"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="jPH-TS-xDY"/>
+                            <menuItem title="Close" keyEquivalent="w" id="pt5-IH-Vdt">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="lsl-Iw-7Vn"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="View" id="9YI-bM-U2R">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="View" id="rpm-9c-MCl">
+                        <items>
+                            <menuItem title="Show Toolbar" keyEquivalent="t" id="ySC-af-Xdq">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="toggleToolbarShown:" target="-1" id="y07-jh-ghG"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Customize Toolbar…" id="XFU-3p-8hM">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="runToolbarCustomizationPalette:" target="-1" id="0y8-Ny-hKU"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="E3E-Ce-vc9">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Window" systemMenu="window" id="wrE-bs-dSo">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="Lie-Rm-ZG8">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="xKJ-Ko-dkH"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="SEX-RH-Onq">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="Nmm-Uq-ItI"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="pYD-V0-byA"/>
+                            <menuItem title="Bring All to Front" id="371-Bx-EVW">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="ftY-Jn-rgL"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="Rbf-9q-Un1">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" systemMenu="help" id="NUT-zg-79b">
+                        <items>
+                            <menuItem title="DM Help" keyEquivalent="?" id="AF4-97-S9o">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="Eol-p6-pwV"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
         <arrayController mode="entity" entityName="NPC" automaticallyPreparesContent="YES" id="Xcc-gr-gVq" userLabel="NPCArray Controller">
             <connections>
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="SJQ-cH-iyK"/>
